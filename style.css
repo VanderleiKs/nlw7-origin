@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+}
+
+:root{
+    font-size: 62.5%;
+    --background: hsl(240, 6%, 13%);
+}
+
+body{
+    display: grid;
+    place-items: center;
+    background-color: rgb(214, 183, 183);
+}
+
+.container_main{
+    background: url("./assets/background.svg");
+    width: 383px;
+    height: 812px;
+}
+
+.content{
+    width: 26.2rem;
+    display: flex;
+    align-items: center;
+    margin-inline: auto;
+    flex-direction: column; 
+}
+
+.content .avatar{
+    margin-top: 18.4rem;
+    margin-bottom: 2.4rem;
+    width: 16rem;
+    height: 18.4rem;
+}
+
+.content h1{
+    font-family: 'Roboto';
+    font-size: 24px;
+    line-height: 30px;
+    color: #E1E1E6;
+    text-align: center;
+}
+
+.content .avatar > img{  /* seta pega o elemento img do primeiro nível apenas*/
+    width: 16rem;
+    height: 18.4rem;
+    object-fit: cover;
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+
+.content .github a{
+    display: flex;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-decoration: none;
+    color: #C4C4CC;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+}
+
+.content .description{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    margin-top: 3.2rem;
+    margin-bottom: 6.4rem;
+    color: #E1E1E6;
+}
+
+.content .social_links ul{
+     padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: .8rem;
+    margin-bottom: 7rem;
+    list-style: none;
+}
