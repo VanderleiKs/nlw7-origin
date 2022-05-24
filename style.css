@@ -14,8 +14,7 @@ body{
 }
 
 .container_main{
-    background: url("./assets/background.svg") no-repeat center;
-
+    background: url("./assets/background.svg") no-repeat center/cover;
     width: 100vw;
     border: 0;
     min-height: 812px;
